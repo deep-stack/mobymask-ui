@@ -3,3 +3,10 @@ export const reportTypes = [
   { value: "URL", label: "Website" },
   { value: "eip155:1", label: "Ethereum Address" },
 ];
+
+export const MOBYMASK_TOPIC = 'mobymask';
+
+export const MESSAGE_KINDS = {
+  INVOKE: 'invoke',
+  REVOKE: 'revoke'
+};

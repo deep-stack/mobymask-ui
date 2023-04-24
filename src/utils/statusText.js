@@ -3,4 +3,9 @@ const phisherStatus = {
   no: "Unregistered",
 };
 
-export default phisherStatus;
+const memberStatus = {
+  yes: "Registered Member",
+  no: "Registered Not Member",
+}
+
+export { phisherStatus, memberStatus };

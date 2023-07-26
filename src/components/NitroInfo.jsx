@@ -59,6 +59,7 @@ export function NitroInfo ({ provider, peer }) {
   const [virtualFundAmount, setVirtualFundAmount] = useState(1_000);
   const [payAmount, setPayAmount] = useAtom(payAmountAtom);
   const [, setWatcherPaymentChannelId] = useAtom(watcherPaymentChannelIdAtom)
+  const DEFAULTSNAPORIGIN=`local:http://localhost:8080`;
 
   const clientLedgerChannelMap = useMemo(() => {
     return Array.from(ledgerChannels.values()).reduce((acc, channel) => {
@@ -128,6 +129,23 @@ export function NitroInfo ({ provider, peer }) {
 
     setupClient();
   }, [provider, nitroKey, peer, nitro, setNitro]);
+
+  const connectSnap = async () => {
+    await provider.request({
+      method: 'wallet_requestSnaps',
+      params: {
+        [DEFAULTSNAPORIGIN]: {},
+      },
+    });
+  }
+
+  const playSnap = async () => {
+    await provider.request({
+      method: 'wallet_invokeSnap',
+      params: { snapId: DEFAULTSNAPORIGIN, request: { method: 'hello' } },
+    });
+  }
+
 
   const refreshInfo = useCallback(async () => {
     const channels = await nitro.getAllLedgerChannels();
@@ -209,6 +227,23 @@ export function NitroInfo ({ provider, peer }) {
   return (
     <ScopedCssBaseline>
       <Box textAlign="left">
+        <Grid container sx={{ ...STYLES.selfInfoHead, justifyContent: "center" }}>
+          <Button
+            variant="contained"
+            size="small"
+            onClick={connectSnap}
+            sx={{ marginRight: 2 }}
+          >
+            CONNECT SNAP
+          </Button>
+          <Button
+            variant="contained"
+            size="small"
+            onClick={playSnap}
+          >
+            PLAY SNAP
+        </Button>
+        </Grid>
         <Grid container sx={STYLES.selfInfoHead}>
           <Grid item xs="auto">
             <Typography variant="subtitle2" color="inherit" noWrap>

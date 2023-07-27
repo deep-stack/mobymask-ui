@@ -1227,14 +1227,14 @@
     wherearewe "^2.0.0"
     xsalsa20 "^1.1.0"
 
-"@cerc-io/nitro-client-browser@^0.1.3":
-  version "0.1.3"
-  resolved "https://git.vdb.to/api/packages/cerc-io/npm/%40cerc-io%2Fnitro-client-browser/-/0.1.3/nitro-client-browser-0.1.3.tgz#9a687112a5ec2d7dd61a9ba685829d0f92c239e0"
-  integrity sha512-Pk9hfAOpGzW7Sy1EadrAN0j1xoFZjlwxW8cG2T895vgVWUjT+xEjkJ9DALKW3QMzF4X20oDVpOhscqPeUOASnQ==
+"@cerc-io/nitro-client-browser@^0.1.6":
+  version "0.1.6"
+  resolved "https://git.vdb.to/api/packages/cerc-io/npm/%40cerc-io%2Fnitro-client-browser/-/0.1.6/nitro-client-browser-0.1.6.tgz#c0c0b7804ee388f124b7037e5166e76d2ded5771"
+  integrity sha512-b7H5QD5xz23Hqb1DSGIQXjG1hfXgkAHqD1IV+QiWKMnT2klnMZ6UX50zCpafm6+umWIta95QrWuCkGjJArMHwg==
   dependencies:
     "@cerc-io/libp2p" "0.42.2-laconic-0.1.3"
-    "@cerc-io/nitro-util" "^0.1.3"
-    "@cerc-io/peer" "^0.2.46"
+    "@cerc-io/nitro-util" "^0.1.6"
+    "@cerc-io/peer" "^0.2.49"
     "@cerc-io/ts-channel" "1.0.3-ts-nitro-0.1.1"
     "@libp2p/crypto" "^1.0.4"
     "@libp2p/tcp" "^6.0.0"
@@ -1250,11 +1250,12 @@
     promjs "^0.4.2"
     uint8arrays "^4.0.3"
 
-"@cerc-io/nitro-util@^0.1.3":
-  version "0.1.3"
-  resolved "https://git.vdb.to/api/packages/cerc-io/npm/%40cerc-io%2Fnitro-util/-/0.1.3/nitro-util-0.1.3.tgz#1c640221c3936203e8ccf492e6374b50502d60d3"
-  integrity sha512-NTg8RO/3bzGLZie3pavcJJzLeL9gI1RLxwEMVBtRzsZfniDfsu7CTasoEX+hKgyBiZstEoMtGbfpwVmM1IEQBA==
+"@cerc-io/nitro-util@^0.1.6":
+  version "0.1.6"
+  resolved "https://git.vdb.to/api/packages/cerc-io/npm/%40cerc-io%2Fnitro-util/-/0.1.6/nitro-util-0.1.6.tgz#7cdf6ee37c21c7863eea3332e84f9450b7534bf3"
+  integrity sha512-moalyL8uG4dvUT1NleHqPXnOSqeto8VxFnyW+nRoTkkjmyrn8cb5XF0nlEDxf2gR/pBzNeGv1NdYwhVYv5rkTA==
   dependencies:
+    "@statechannels/nitro-protocol" "^2.0.0-alpha.4"
     assert "^2.0.0"
     debug "^4.3.4"
     ethers "^5.7.2"
@@ -1263,7 +1264,7 @@
     lodash "^4.17.21"
     uint8arrays "^4.0.3"
 
-"@cerc-io/peer@^0.2.46", "@cerc-io/peer@^0.2.50":
+"@cerc-io/peer@^0.2.47", "@cerc-io/peer@^0.2.49", "@cerc-io/peer@^0.2.50":
   version "0.2.50"
   resolved "https://git.vdb.to/api/packages/cerc-io/npm/%40cerc-io%2Fpeer/-/0.2.50/peer-0.2.50.tgz#79c480ae24e59b68ee1ac724dc90ce706b85a7d0"
   integrity sha512-/+rv7iu5oxMKW+t+BisyMJmF8zAFIPVDRIxZ8gpzVvjNUJBKmxKZsjckQoxEoqdEYKBwc8nNxzSs6Y9qG4pnGg==
@@ -1271,35 +1272,6 @@
     "@cerc-io/libp2p" "0.42.2-laconic-0.1.3"
     "@cerc-io/prometheus-metrics" "1.1.4"
     "@chainsafe/libp2p-noise" "^11.0.0"
-    "@libp2p/floodsub" "^6.0.0"
-    "@libp2p/mplex" "^7.1.1"
-    "@libp2p/peer-id-factory" "^2.0.0"
-    "@libp2p/pubsub-peer-discovery" "^8.0.0"
-    "@libp2p/websockets" "^5.0.5"
-    "@multiformats/multiaddr" "^11.1.4"
-    assert "^2.0.0"
-    buffer "^6.0.3"
-    chai "^4.3.4"
-    debug "^4.3.1"
-    it-length-prefixed "^8.0.4"
-    it-map "^2.0.0"
-    it-pipe "^2.0.5"
-    it-pushable "^3.1.2"
-    mocha "^8.4.0"
-    p-event "^5.0.1"
-    uint8arrays "^4.0.3"
-    unique-names-generator "^4.7.1"
-    yargs "^17.0.1"
-
-"@cerc-io/peer@^0.2.47":
-  version "0.2.47"
-  resolved "https://git.vdb.to/api/packages/cerc-io/npm/%40cerc-io%2Fpeer/-/0.2.47/peer-0.2.47.tgz#0f8bf34136feb2c9f89d6f7885823645bbea4a19"
-  integrity sha512-tXhxS8QRvz1dpdLwl43QRba1Z73ltIvbUF1CJc/Zq9k+mnzpMQUzdHfEcIDjDfympGsytrPAMcoKjpqpK1wETw==
-  dependencies:
-    "@cerc-io/libp2p" "0.42.2-laconic-0.1.3"
-    "@cerc-io/prometheus-metrics" "1.1.4"
-    "@chainsafe/libp2p-noise" "^11.0.0"
-    "@chainsafe/libp2p-yamux" "^4.0.2"
     "@libp2p/floodsub" "^6.0.0"
     "@libp2p/mplex" "^7.1.1"
     "@libp2p/peer-id-factory" "^2.0.0"
@@ -1392,21 +1364,6 @@
     protons-runtime "^5.0.0"
     uint8arraylist "^2.3.2"
     uint8arrays "^4.0.2"
-
-"@chainsafe/libp2p-yamux@^4.0.2":
-  version "4.0.2"
-  resolved "https://registry.yarnpkg.com/@chainsafe/libp2p-yamux/-/libp2p-yamux-4.0.2.tgz#2e970da83cda5551c834fb786963007a71e772f1"
-  integrity sha512-p0m/4ab4JLaIQqUtxvm8bSqdt9sb0uXX8PFj1CQM1eJLeV1LxzzygaSOeLxN/5ckHCuK7q/9eb9xybvl6vz/JA==
-  dependencies:
-    "@libp2p/interface-connection" "^5.1.0"
-    "@libp2p/interface-stream-muxer" "^4.1.2"
-    "@libp2p/interfaces" "^3.3.2"
-    "@libp2p/logger" "^2.0.7"
-    abortable-iterator "^5.0.1"
-    any-signal "^4.1.1"
-    it-pipe "^3.0.1"
-    it-pushable "^3.1.3"
-    uint8arraylist "^2.4.3"
 
 "@chainsafe/netmask@^2.0.0":
   version "2.0.0"
@@ -2438,17 +2395,6 @@
     it-stream-types "^1.0.4"
     uint8arraylist "^2.1.2"
 
-"@libp2p/interface-connection@^5.0.0", "@libp2p/interface-connection@^5.1.0":
-  version "5.1.1"
-  resolved "https://registry.yarnpkg.com/@libp2p/interface-connection/-/interface-connection-5.1.1.tgz#da0572c76da43629d52b8bec6cd092143fae421d"
-  integrity sha512-ytknMbuuNW72LYMmTP7wFGP5ZTaUSGBCmV9f+uQ55XPcFHtKXLtKWVU/HE8IqPmwtyU8AO7veGoJ/qStMHNRVA==
-  dependencies:
-    "@libp2p/interface-peer-id" "^2.0.0"
-    "@libp2p/interfaces" "^3.0.0"
-    "@multiformats/multiaddr" "^12.0.0"
-    it-stream-types "^2.0.1"
-    uint8arraylist "^2.4.3"
-
 "@libp2p/interface-content-routing@^2.0.0":
   version "2.0.2"
   resolved "https://registry.yarnpkg.com/@libp2p/interface-content-routing/-/interface-content-routing-2.0.2.tgz#daeb14a8b3ec9520cbaab25c615db4aacf706200"
@@ -2594,20 +2540,6 @@
     "@libp2p/interfaces" "^3.0.0"
     it-stream-types "^1.0.4"
 
-"@libp2p/interface-stream-muxer@^4.1.2":
-  version "4.1.2"
-  resolved "https://registry.yarnpkg.com/@libp2p/interface-stream-muxer/-/interface-stream-muxer-4.1.2.tgz#f0a5edb906ec784d991b9421a024f0f21ebdaab4"
-  integrity sha512-dQJcn67UaAa8YQFRJDhbo4uT453z/2lCzD/ZwTk1YOqJxATXbXgVcB8dXDQFEUiUX3ZjVQ1IBu+NlQd+IZ++zw==
-  dependencies:
-    "@libp2p/interface-connection" "^5.0.0"
-    "@libp2p/interfaces" "^3.0.0"
-    "@libp2p/logger" "^2.0.7"
-    abortable-iterator "^5.0.1"
-    any-signal "^4.1.1"
-    it-pushable "^3.1.3"
-    it-stream-types "^2.0.1"
-    uint8arraylist "^2.4.3"
-
 "@libp2p/interface-transport@^2.0.0", "@libp2p/interface-transport@^2.1.0":
   version "2.1.3"
   resolved "https://registry.yarnpkg.com/@libp2p/interface-transport/-/interface-transport-2.1.3.tgz#3fbc8457013a1552d281a3d94ee7ae0725cc16e0"
@@ -2623,11 +2555,6 @@
   version "3.3.1"
   resolved "https://registry.yarnpkg.com/@libp2p/interfaces/-/interfaces-3.3.1.tgz#519c77c030b10d776250bbebf65990af53ccb2ee"
   integrity sha512-3N+goQt74SmaVOjwpwMPKLNgh1uDQGw8GD12c40Kc86WOq0qvpm3NfACW+H8Su2X6KmWjCSMzk9JWs9+8FtUfg==
-
-"@libp2p/interfaces@^3.3.2":
-  version "3.3.2"
-  resolved "https://registry.yarnpkg.com/@libp2p/interfaces/-/interfaces-3.3.2.tgz#5d8079be845b0960939b5b18880e785a4714465a"
-  integrity sha512-p/M7plbrxLzuQchvNwww1Was7ZeGE2NaOFulMaZBYIihU8z3fhaV+a033OqnC/0NTX/yhfdNOG7znhYq3XoR/g==
 
 "@libp2p/keychain@^1.0.0":
   version "1.0.1"
@@ -2645,7 +2572,7 @@
     sanitize-filename "^1.6.3"
     uint8arrays "^4.0.3"
 
-"@libp2p/logger@^2.0.0", "@libp2p/logger@^2.0.1", "@libp2p/logger@^2.0.2", "@libp2p/logger@^2.0.5", "@libp2p/logger@^2.0.7":
+"@libp2p/logger@^2.0.0", "@libp2p/logger@^2.0.1", "@libp2p/logger@^2.0.2", "@libp2p/logger@^2.0.5":
   version "2.1.1"
   resolved "https://registry.yarnpkg.com/@libp2p/logger/-/logger-2.1.1.tgz#e12e6c320ea64252af954bcec996895098d1cd36"
   integrity sha512-2UbzDPctg3cPupF6jrv6abQnAUTrbLybNOj0rmmrdGm1cN2HJ1o/hBu0sXuq4KF9P1h/eVRn1HIRbVIEKnEJrA==
@@ -4486,14 +4413,6 @@ abortable-iterator@^4.0.2:
     get-iterator "^2.0.0"
     it-stream-types "^1.0.3"
 
-abortable-iterator@^5.0.1:
-  version "5.0.1"
-  resolved "https://registry.yarnpkg.com/abortable-iterator/-/abortable-iterator-5.0.1.tgz#5d93eba6fa8287a973a9ea090c64ca08b3777780"
-  integrity sha512-hlZ5Z8UwqrKsJcelVPEqDduZowJPBQJ9ZhBC2FXpja3lXy8X6MoI5uMzIgmrA8+3jcVnp8TF/tx+IBBqYJNUrg==
-  dependencies:
-    get-iterator "^2.0.0"
-    it-stream-types "^2.0.1"
-
 abstract-level@^1.0.2:
   version "1.0.3"
   resolved "https://registry.yarnpkg.com/abstract-level/-/abstract-level-1.0.3.tgz#78a67d3d84da55ee15201486ab44c09560070741"
@@ -4687,7 +4606,7 @@ any-signal@^3.0.0:
   resolved "https://registry.yarnpkg.com/any-signal/-/any-signal-3.0.1.tgz#49cae34368187a3472e31de28fb5cb1430caa9a6"
   integrity sha512-xgZgJtKEa9YmDqXodIgl7Fl1C8yNXr8w6gXjqK3LW4GcEiYT+6AQfJSE/8SPsEpLLmcvbv8YU+qet94UewHxqg==
 
-any-signal@^4.0.1, any-signal@^4.1.1:
+any-signal@^4.0.1:
   version "4.1.1"
   resolved "https://registry.yarnpkg.com/any-signal/-/any-signal-4.1.1.tgz#928416c355c66899e6b2a91cad4488f0324bae03"
   integrity sha512-iADenERppdC+A2YKbOXXB2WUeABLaM6qnpZ70kZbPZ1cZMMJ7eF+3CaYm+/PhBizgkzlvssC7QuHS30oOiQYWA==
@@ -8837,13 +8756,6 @@ it-pushable@^3.0.0, it-pushable@^3.1.0, it-pushable@^3.1.2:
   version "3.1.2"
   resolved "https://registry.yarnpkg.com/it-pushable/-/it-pushable-3.1.2.tgz#6f2420fb192f637613c561720945a36b6d9160ae"
   integrity sha512-zU9FbeoGT0f+yobwm8agol2OTMXbq4ZSWLEi7hug6TEZx4qVhGhGyp31cayH04aBYsIoO2Nr5kgMjH/oWj2BJQ==
-
-it-pushable@^3.1.3:
-  version "3.2.1"
-  resolved "https://registry.yarnpkg.com/it-pushable/-/it-pushable-3.2.1.tgz#72d7ccf7e7c0ccecf8cbaf74064f7be56e775c59"
-  integrity sha512-sLFz2Q0oyDCJpTciZog7ipP4vSftfPy3e6JnH6YyztRa1XqkpGQaafK3Jw/JlfEBtCXfnX9uVfcpu3xpSAqCVQ==
-  dependencies:
-    p-defer "^4.0.0"
 
 it-reader@^6.0.1:
   version "6.0.2"

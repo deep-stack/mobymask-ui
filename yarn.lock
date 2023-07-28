@@ -1111,6 +1111,13 @@
   dependencies:
     regenerator-runtime "^0.14.0"
 
+"@babel/runtime@^7.22.6":
+  version "7.22.6"
+  resolved "https://registry.yarnpkg.com/@babel/runtime/-/runtime-7.22.6.tgz#57d64b9ae3cff1d67eb067ae117dac087f5bd438"
+  integrity sha512-wDb5pWm4WDdF6LFUde3Jl8WzPA+3ZbxYqkC6xAXuD3irdEHN1k0NfTRrJD8ZD378SJ61miMLCqIOXYhd8x+AJQ==
+  dependencies:
+    regenerator-runtime "^0.13.11"
+
 "@babel/template@^7.18.10", "@babel/template@^7.20.7", "@babel/template@^7.3.3":
   version "7.21.9"
   resolved "https://registry.yarnpkg.com/@babel/template/-/template-7.21.9.tgz#bf8dad2859130ae46088a99c1f265394877446fb"
@@ -1149,6 +1156,15 @@
   version "0.2.3"
   resolved "https://registry.yarnpkg.com/@bcoe/v8-coverage/-/v8-coverage-0.2.3.tgz#75a2e8b51cb758a7553d6804a5932d7aace75c39"
   integrity sha512-0hYQ8SB4Db5zvZB4axdMHGwEaQjkZzFjQiN9LVYvIFB2nSUHW9tYpxWriPrWDASIxiaXax83REcLxuSdnGPZtw==
+
+"@cerc-io/libp2p-util@^0.2.37":
+  version "0.2.37"
+  resolved "https://git.vdb.to/api/packages/cerc-io/npm/%40cerc-io%2Flibp2p-util/-/0.2.37/libp2p-util-0.2.37.tgz#a1fd2dc13e2b0f821740783b0e3fee5191f3508c"
+  integrity sha512-pIk2J9eP4c63h+JPpMla6QBhheN3+TRryH4rdgO7QN3iqrXUprJN//K/4dV/msA20nKZOp/I49iXtbSivZMsQg==
+  dependencies:
+    "@multiformats/multiaddr" "^11.1.4"
+    assert "^2.0.0"
+    unique-names-generator "^4.7.1"
 
 "@cerc-io/libp2p@0.42.2-laconic-0.1.3":
   version "0.42.2-laconic-0.1.3"
@@ -1251,6 +1267,34 @@
     unique-names-generator "^4.7.1"
     yargs "^17.0.1"
 
+"@cerc-io/peer@^0.2.50":
+  version "0.2.50"
+  resolved "https://git.vdb.to/api/packages/cerc-io/npm/%40cerc-io%2Fpeer/-/0.2.50/peer-0.2.50.tgz#79c480ae24e59b68ee1ac724dc90ce706b85a7d0"
+  integrity sha512-/+rv7iu5oxMKW+t+BisyMJmF8zAFIPVDRIxZ8gpzVvjNUJBKmxKZsjckQoxEoqdEYKBwc8nNxzSs6Y9qG4pnGg==
+  dependencies:
+    "@cerc-io/libp2p" "0.42.2-laconic-0.1.3"
+    "@cerc-io/prometheus-metrics" "1.1.4"
+    "@chainsafe/libp2p-noise" "^11.0.0"
+    "@libp2p/floodsub" "^6.0.0"
+    "@libp2p/mplex" "^7.1.1"
+    "@libp2p/peer-id-factory" "^2.0.0"
+    "@libp2p/pubsub-peer-discovery" "^8.0.0"
+    "@libp2p/websockets" "^5.0.5"
+    "@multiformats/multiaddr" "^11.1.4"
+    assert "^2.0.0"
+    buffer "^6.0.3"
+    chai "^4.3.4"
+    debug "^4.3.1"
+    it-length-prefixed "^8.0.4"
+    it-map "^2.0.0"
+    it-pipe "^2.0.5"
+    it-pushable "^3.1.2"
+    mocha "^8.4.0"
+    p-event "^5.0.1"
+    uint8arrays "^4.0.3"
+    unique-names-generator "^4.7.1"
+    yargs "^17.0.1"
+
 "@cerc-io/prometheus-metrics@1.1.4":
   version "1.1.4"
   resolved "https://git.vdb.to/api/packages/cerc-io/npm/%40cerc-io%2Fprometheus-metrics/-/1.1.4/prometheus-metrics-1.1.4.tgz#51006b0b5bf6168394390c78072a1c0bb2b02f28"
@@ -1263,18 +1307,31 @@
     it-stream-types "^1.0.4"
     promjs "^0.4.2"
 
-"@cerc-io/react-peer@0.2.34":
-  version "0.2.34"
-  resolved "https://git.vdb.to/api/packages/cerc-io/npm/%40cerc-io%2Freact-peer/-/0.2.34/react-peer-0.2.34.tgz#d4e5ef18cc1cb5ae79261d99b8a7a6c7ebaa7b80"
-  integrity sha512-j2v/x2dpkPFWA30FCFIvaC5FAbmQ9Xd/ljqiE0QAVboiy+cYNnySKRAxC9lBQBEJtVU+twBimh9QSh80QpijXw==
+"@cerc-io/react-libp2p-debug@^0.2.37":
+  version "0.2.37"
+  resolved "https://git.vdb.to/api/packages/cerc-io/npm/%40cerc-io%2Freact-libp2p-debug/-/0.2.37/react-libp2p-debug-0.2.37.tgz#a3a06c1c4f9123925bdceb13525335a829fb2b8a"
+  integrity sha512-+8Cx/lPtyPki9Dru2+H6FFeKr5SqNrRswz12+ivlFQ04bHf5OozsSL2XAqPiwr/FuSat9juEj/LIXPZgp4DWzg==
   dependencies:
-    "@cerc-io/peer" "^0.2.41"
+    "@cerc-io/libp2p-util" "^0.2.37"
+    "@mui/icons-material" "^5.11.3"
     "@mui/lab" "^5.0.0-alpha.121"
     "@mui/material" "^5.11.3"
-    convert "^4.10.0"
     d3 "^5.5.0"
     lodash "^4.17.21"
     use-resize-observer "^9.1.0"
+
+"@cerc-io/react-peer@^0.2.37":
+  version "0.2.37"
+  resolved "https://git.vdb.to/api/packages/cerc-io/npm/%40cerc-io%2Freact-peer/-/0.2.37/react-peer-0.2.37.tgz#a82ce3a9afb62a0bfc73f288767a6e664497af23"
+  integrity sha512-0XVxkG91Ba+Tb1Hbgp3KeOQKaCErqje95HIJJ9OwLH+E81Tb9+mSf88MHwONAGtwe6+5LtogOH7zfoiFM61+SQ==
+  dependencies:
+    "@cerc-io/libp2p-util" "^0.2.37"
+    "@cerc-io/peer" "^0.2.50"
+    "@cerc-io/react-libp2p-debug" "^0.2.37"
+    "@mui/lab" "^5.0.0-alpha.121"
+    "@mui/material" "^5.11.3"
+    convert "^4.10.0"
+    lodash "^4.17.21"
 
 "@chainsafe/as-sha256@^0.4.1":
   version "0.4.1"
@@ -2826,6 +2883,13 @@
   integrity sha512-oKkx9z9Kwg40NtcIajF9uOXhxiyTZrrm9nmIJ4UjkU2IdHpd4QVLbCc/5hZN/y0C6qzi2Zlxyr9TGddQx2vx2A==
   dependencies:
     "@babel/runtime" "^7.21.0"
+
+"@mui/icons-material@^5.11.3":
+  version "5.14.1"
+  resolved "https://registry.yarnpkg.com/@mui/icons-material/-/icons-material-5.14.1.tgz#2f145c15047a0c7f01353ce620cb88276dadba9e"
+  integrity sha512-xV/f26muQqtWzerzOIdGPrXoxp/OKaE2G2Wp9gnmG47mHua5Slup/tMc3fA4ZYUreGGrK6+tT81TEvt1Wsng8Q==
+  dependencies:
+    "@babel/runtime" "^7.22.6"
 
 "@mui/lab@^5.0.0-alpha.121":
   version "5.0.0-alpha.126"

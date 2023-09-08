@@ -21,8 +21,8 @@ import IS_MEMBER_GRAPHQL from "../queries/isMember";
 import { gql } from "@apollo/client";
 import useLazyQuery from "../hooks/useLazyQuery";
 import { checkMemberStatus, endorseHandle } from "../utils/checkMemberStatus";
+import config from "../utils/config";
 
-const config = require("../utils/config.json");
 const { chainId, address } = config;
 
 function PendingEndorsements() {

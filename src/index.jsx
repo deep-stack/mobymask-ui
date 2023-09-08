@@ -6,7 +6,7 @@ import { createTheme, ThemeProvider } from "@mui/material/styles";
 import { responsiveFontSizes } from "@mui/material";
 
 import { StyledEngineProvider } from "@mui/material/styles";
-import config from "./utils/config.json";
+import config from "./utils/config";
 import App from "./App";
 import "./index.css";
 

@@ -14,7 +14,7 @@ import { createTheme, ThemeProvider } from '@mui/material/styles';
 import { PeerContext, Metrics, NetworkGraph } from "@cerc-io/react-peer";
 import { SelfInfo, Connections, PeersGraph } from "@cerc-io/react-libp2p-debug";
 
-import config from '../utils/config.json';
+import config from '../utils/config';
 import { SubscribedMessages } from './SubscribedMessages';
 import { TabPanel } from './TabPanel';
 

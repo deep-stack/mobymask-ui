@@ -1,6 +1,6 @@
 const hostname = window.location.hostname;
 
-const config = {
+const hostnameConfig = {
   "mobymask-ui.vercel.app": {
     address: "0x5FbDB2315678afecb367f032d93F642f64180aa3",
     name: "MobyMask",
@@ -18,4 +18,14 @@ const config = {
   },
 };
 
-export default config[hostname] || {};
+const config = {
+  "relayNodes": [],
+  "peer": {
+    "denyMultiaddrs": [],
+    "enableDebugInfo": true,
+    "pubsub": "floodsub"
+  },
+  ...hostnameConfig[hostname]
+}
+
+export default config;

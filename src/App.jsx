@@ -14,10 +14,11 @@ import InstallExtension from "./views/InstallExtension";
 import FooterBox from "./views/FooterBox";
 import { MESSAGE_KINDS, MOBYMASK_TOPIC, DISPLAY_ENDORSE_MEMBERS } from "./utils/constants";
 import { getCurrentTime } from "./utils/getCurrentTime";
-import artifacts from "./utils/artifacts.json";
 import DebugPanel from "./components/DebugPanel";
 
-const contractInterface = new ethers.utils.Interface(artifacts.abi);
+const { abi } = require("./contracts/abi.json");
+
+const contractInterface = new ethers.utils.Interface(abi);
 
 function App() {
   const peer = useContext(PeerContext);
